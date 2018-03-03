@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) in
+      configuration.applicationId = "pplchat"
+      configuration.clientKey = "AJfdS39t84fjl4394pDJA39jrJ342"
+      configuration.server = "https://frozen-hamlet-57427.herokuapp.com/parse"
+    }))
     return true
   }
 

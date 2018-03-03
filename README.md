@@ -2,13 +2,13 @@
 
 **ppl chat** is a Chat app using an [open source Parse](http://parseplatform.org/) backend.
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User can sign up and sign in to the login screen (+1pt)
+- [x] User can sign up and sign in to the login screen (+1pt)
 - [ ] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc. (+1pt)
 - [ ] User can compose and send chat messages (+2pt)
 - [ ] User can view a list of chat messages in chronological order (+2pt)
@@ -27,12 +27,12 @@ The following **stretch** user stories are implemented:
 The following **additional** user stories are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
-
+<!---
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1.
 2.
-
+-->
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
