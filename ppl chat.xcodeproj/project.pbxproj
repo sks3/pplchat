@@ -17,6 +17,9 @@
 		E78F4A4C20478F24008780E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78F4A4A20478F24008780E7 /* LaunchScreen.storyboard */; };
 		E78F4A5720478F24008780E7 /* ppl_chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F4A5620478F24008780E7 /* ppl_chatTests.swift */; };
 		E78F4A6220478F24008780E7 /* ppl_chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F4A6120478F24008780E7 /* ppl_chatUITests.swift */; };
+		E7B0F349204B6D740063BE09 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0F348204B6D740063BE09 /* AlertView.swift */; };
+		E7B0F34B204B73940063BE09 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0F34A204B73940063BE09 /* ChatViewController.swift */; };
+		E7B0F34D204B75AE0063BE09 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0F34C204B75AE0063BE09 /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		E78F4A5D20478F24008780E7 /* ppl chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ppl chatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78F4A6120478F24008780E7 /* ppl_chatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppl_chatUITests.swift; sourceTree = "<group>"; };
 		E78F4A6320478F24008780E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B0F348204B6D740063BE09 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		E7B0F34A204B73940063BE09 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E7B0F34C204B75AE0063BE09 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		FC2D7E8078BCDF39DE6845E8 /* Pods-ppl chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ppl chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ppl chat/Pods-ppl chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,9 @@
 				E78F4A4820478F24008780E7 /* Assets.xcassets */,
 				E78F4A4A20478F24008780E7 /* LaunchScreen.storyboard */,
 				E78F4A4D20478F24008780E7 /* Info.plist */,
+				E7B0F348204B6D740063BE09 /* AlertView.swift */,
+				E7B0F34A204B73940063BE09 /* ChatViewController.swift */,
+				E7B0F34C204B75AE0063BE09 /* ChatCell.swift */,
 			);
 			path = "ppl chat";
 			sourceTree = "<group>";
@@ -462,6 +471,9 @@
 			files = (
 				E78F4A4420478F24008780E7 /* LoginViewController.swift in Sources */,
 				E78F4A4220478F24008780E7 /* AppDelegate.swift in Sources */,
+				E7B0F34B204B73940063BE09 /* ChatViewController.swift in Sources */,
+				E7B0F34D204B75AE0063BE09 /* ChatCell.swift in Sources */,
+				E7B0F349204B6D740063BE09 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
