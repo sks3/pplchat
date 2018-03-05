@@ -37,7 +37,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![pplchat Video Walkthrough](https://github.com/sks3/ppplchat/blob/master/pplchat1.gif)
+![pplchat Video Walkthrough](https://github.com/sks3/pplchat/blob/master/pplchat1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
