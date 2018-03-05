@@ -21,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       configuration.clientKey = "AJfdS39t84fjl4394pDJA39jrJ342"
       configuration.server = "https://frozen-hamlet-57427.herokuapp.com/parse"
     }))
+    
+    //if PFUser.current() != nil {
+    //  let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    //  window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
+    //}
+    
     return true
   }
 
