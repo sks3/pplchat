@@ -74,17 +74,17 @@
         <!--Chat-->
         <scene sceneID="6Jz-l8-hIX">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="cyz-mk-FyK" customClass="ChatViewController" customModule="ppl_chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cyz-mk-FyK" customClass="ChatViewController" customModule="ppl_chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHT-wO-QHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a message.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5G-uT-U76">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a message.." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5G-uT-U76">
                                 <rect key="frame" x="0.0" y="64" width="305" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="677-9d-cqG">
                                 <rect key="frame" x="313" y="64" width="46" height="30"/>
@@ -107,21 +107,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGe-PC-tDa">
-                                                    <rect key="frame" x="75" y="11" width="285" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGe-PC-tDa">
+                                                    <rect key="frame" x="325" y="8" width="42" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZo-wl-I01">
-                                                    <rect key="frame" x="9" y="12" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZo-wl-I01">
+                                                    <rect key="frame" x="8" y="8" width="42" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="FGe-PC-tDa" secondAttribute="bottom" constant="8" id="3J2-wx-4ch"/>
+                                                <constraint firstItem="YZo-wl-I01" firstAttribute="top" secondItem="89j-e8-lk8" secondAttribute="top" constant="8" id="7u2-Mb-BZD"/>
+                                                <constraint firstAttribute="trailing" secondItem="FGe-PC-tDa" secondAttribute="trailing" constant="8" id="7yt-kw-ioA"/>
+                                                <constraint firstItem="FGe-PC-tDa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YZo-wl-I01" secondAttribute="trailing" constant="8" id="C7X-u7-dsn"/>
+                                                <constraint firstItem="FGe-PC-tDa" firstAttribute="top" secondItem="89j-e8-lk8" secondAttribute="top" constant="8" id="H3v-OO-ihP"/>
+                                                <constraint firstAttribute="bottom" secondItem="YZo-wl-I01" secondAttribute="bottom" constant="8" id="r4v-Er-JMK"/>
+                                                <constraint firstItem="YZo-wl-I01" firstAttribute="leading" secondItem="89j-e8-lk8" secondAttribute="leading" constant="8" id="wc7-32-lWo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="chatMessageLabel" destination="FGe-PC-tDa" id="Lcj-go-Bds"/>

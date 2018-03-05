@@ -22,12 +22,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       configuration.server = "https://frozen-hamlet-57427.herokuapp.com/parse"
     }))
     
-    //if PFUser.current() != nil {
-    //  let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //  window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
-    //}
-    
+    if PFUser.current() != nil {
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let chatViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
+      let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y:0, width: UIScreen.main.bounds.width, height: 54))
+      let navItem = UINavigationItem(title: "Chat")
+      let signOut = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(done))
+      navItem.leftBarButtonItem = signOut
+      navBar.setItems([navItem], animated: false)
+      chatViewController.view.addSubview(navBar)
+      window?.rootViewController = chatViewController
+    }
     return true
+  }
+  
+  @objc func done() {
+    PFUser.logOut()
+    UIControl().sendAction(#selector(NSXPCConnection.suspend), to: UIApplication.shared, for: nil)
   }
 
   func applicationWillResignActive(_ application: UIApplication) {
